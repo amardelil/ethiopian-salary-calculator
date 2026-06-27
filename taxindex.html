@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Salary Calculator | Net Pay after Tax & Pension</title>
+    <link rel="stylesheet" href="taxstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <div class="header">
+                <h1>Ethiopian Salary Calculator</h1>
+                <p>Calculate your net salary after income tax and pension contribution</p>
+                <div class="currency">ብር (ETB)</div>
+            </div>
+
+            <div class="input-group">
+                <label for="grossSalary">Gross Monthly Salary (ETB)</label>
+                <div class="input-wrapper">
+                    <span class="currency-symbol">ብር</span>
+                    <input type="number" id="grossSalary" placeholder="e.g., 10000" value="10000" step="100">
+                </div>
+            </div>
+
+            <div class="options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="includeEmployerPension"> Show employer's pension contribution
+                </label>
+            </div>
+
+            <div class="results">
+                <div class="result-card">
+                    <h3>Net Salary</h3>
+                    <div class="result-value" id="netSalary">0.00 ብር</div>
+                </div>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <span>Income Tax</span>
+                        <strong id="incomeTax">0.00 ብር</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Pension (Employee)</span>
+                        <strong id="pensionEmployee">0.00 ብር</strong>
+                    </div>
+                    <div class="result-item employer-pension" id="employerPensionItem" style="display: none;">
+                        <span>Pension (Employer)</span>
+                        <strong id="pensionEmployer">0.00 ብር</strong>
+                    </div>
+                    <div class="result-item total-deduction">
+                        <span>Total Deductions</span>
+                        <strong id="totalDeductions">0.00 ብር</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="downloadPDF" class="btn btn-pdf">
+                    <i class="fas fa-download"></i> Download as PDF
+                </button>
+                <button id="resetBtn" class="btn btn-reset">
+                    <i class="fas fa-undo-alt"></i> Reset
+                </button>
+            </div>
+
+            <div class="disclaimer">
+                <i class="fas fa-info-circle"></i>
+                <small>Tax calculation based on Ethiopian income tax brackets (as of 2024). Pension rate: 7% employee, 11% employer. This is for informational purposes only.</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="taxscript.js"></script>
+    <!-- Include html2pdf for PDF generation (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
