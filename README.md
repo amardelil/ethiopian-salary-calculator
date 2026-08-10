@@ -68,10 +68,4 @@ ethiopian-salary-calculator/
 
 ---
 
-## 📄 License
-
-This project is open‑source under the [MIT License](LICENSE).
-
----
-
 *Built with ❤️ by Amar Delil*
