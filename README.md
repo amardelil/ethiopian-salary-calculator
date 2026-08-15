@@ -3,7 +3,7 @@
 > A modern web tool to calculate **net monthly salary** after Ethiopian income tax and pension contributions.  
 > Built with HTML, CSS, and JavaScript. Works offline and is fully responsive.
 
-🔗 **[Live Demo](https://hotel-booking-amber-eta.vercel.app/)**
+🔗 **[Live Demo](https://ethiopian-salary-calculator-sb4r.vercel.app/)**
 ---
 
 ## 📸 Screenshots
