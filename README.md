@@ -10,15 +10,7 @@
 
 | Calculator Interface | Results View |
 |:--------------------:|:------------:|
-| ![Calculator](images/calculater.png) | ![Results](images/result.png) |
-
----
-
-## ✨ Features
-
-- ✅ **Pension included** – 7% employee / 11% employer (optional display)
-- ✅ **Reset button** – revert to the default salary (10,000 ETB)
-- ✅ **Clean, responsive design** – works on desktop, tablet, and mobile
+| ![Calculator](images/calculater.png) | ![Results](images/result.png)
 
 ---
 
