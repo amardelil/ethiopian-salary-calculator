@@ -17,7 +17,6 @@
 ## ✨ Features
 
 - ✅ **Pension included** – 7% employee / 11% employer (optional display)
-- ✅ **PDF export** – download a summary as a PDF file
 - ✅ **Reset button** – revert to the default salary (10,000 ETB)
 - ✅ **Clean, responsive design** – works on desktop, tablet, and mobile
 
