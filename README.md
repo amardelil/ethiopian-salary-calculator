@@ -16,7 +16,6 @@
 
 ## ✨ Features
 
-- ✅ **Accurate tax brackets** – based on Ethiopian 2024 income tax rates
 - ✅ **Pension included** – 7% employee / 11% employer (optional display)
 - ✅ **PDF export** – download a summary as a PDF file
 - ✅ **Reset button** – revert to the default salary (10,000 ETB)
