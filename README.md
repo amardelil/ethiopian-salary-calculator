@@ -52,8 +52,5 @@ ethiopian-salary-calculator/
 ## 📬 Connect with Me
 
 - **GitHub** – [amardelil](https://github.com/amardelil)
-- **Telegram** – [@amardelil](https://t.me/+251992156362)
 
 ---
-
-*Built with ❤️ by Amar Delil*
