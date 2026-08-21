@@ -118,3 +118,43 @@ resetBtn.addEventListener('click', resetCalculator);
 
 // Initial calculation
 updateUI();
+// Development tests for salary calculations
+function runSalaryTests() {
+    const testSalaries = [0, 2000, 4000, 7000, 10000, 14000, 20000];
+
+    testSalaries.forEach((salary) => {
+        const result = calculateSalary(salary);
+
+        console.assert(
+            result !== null,
+            `Salary calculation failed for ${salary} ETB`
+        );
+
+        if (result) {
+            console.assert(
+                result.grossSalary === salary,
+                `Gross salary mismatch for ${salary} ETB`
+            );
+
+            console.assert(
+                result.pensionEmployee >= 0,
+                `Employee pension is invalid for ${salary} ETB`
+            );
+
+            console.assert(
+                result.incomeTax >= 0,
+                `Income tax is negative for ${salary} ETB`
+            );
+
+            console.assert(
+                result.netSalary >= 0,
+                `Net salary is negative for ${salary} ETB`
+            );
+        }
+    });
+
+    console.log('Salary calculation tests completed.');
+}
+
+// Run development tests
+runSalaryTests();
