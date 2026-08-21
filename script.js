@@ -111,11 +111,11 @@ function downloadPDF() {
 }
 
 // Event listeners
-grossInput.addEventListener('input', calculateSalary);
-includeEmployerCheckbox.addEventListener('change', calculateSalary);
+grossInput.addEventListener('input', updateUI);
+includeEmployerCheckbox.addEventListener('change', updateUI);
 downloadBtn.addEventListener('click', downloadPDF);
 resetBtn.addEventListener('click', resetCalculator);
 
 // Initial calculation
-calculateSalary();
-
+updateUI();
+}
