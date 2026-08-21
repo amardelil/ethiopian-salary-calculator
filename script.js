@@ -67,7 +67,29 @@ function calculateSalary(grossSalary) {
         netSalary
     };
 }
+function updateUI() {
+    let gross = parseFloat(grossInput.value);
 
+    if (isNaN(gross) || gross < 0) {
+        gross = 0;
+    }
+
+    const result = calculateSalary(gross);
+
+    if (!result) return;
+
+    netSalarySpan.textContent = formatCurrency(result.netSalary);
+    incomeTaxSpan.textContent = formatCurrency(result.incomeTax);
+    pensionEmployeeSpan.textContent = formatCurrency(result.pensionEmployee);
+    totalDeductionsSpan.textContent = formatCurrency(result.totalDeductions);
+
+    if (includeEmployerCheckbox.checked) {
+        pensionEmployerSpan.textContent = formatCurrency(result.pensionEmployer);
+        employerPensionItem.style.display = 'block';
+    } else {
+        employerPensionItem.style.display = 'none';
+    }
+}
 // Reset to default
 function resetCalculator() {
     grossInput.value = '10000';
