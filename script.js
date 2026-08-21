@@ -29,11 +29,17 @@ const resetBtn = document.getElementById('resetBtn');
 
 // Helper: Calculate income tax based on gross salary
 function calculateIncomeTax(gross) {
+    if (!Number.isFinite(gross) || gross <= 0) {
+        return 0;
+    }
+
     for (const bracket of TAX_BRACKETS) {
         if (gross >= bracket.min && gross <= bracket.max) {
-            return gross * bracket.rate - bracket.deduction;
+            const tax = gross * bracket.rate - bracket.deduction;
+            return Math.max(0, tax);
         }
     }
+
     return 0;
 }
 
