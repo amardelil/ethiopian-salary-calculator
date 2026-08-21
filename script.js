@@ -43,38 +43,29 @@ function formatCurrency(amount) {
 }
 
 // Main calculation function
-function calculateSalary() {
-    let gross = parseFloat(grossInput.value);
-    if (isNaN(gross) || gross < 0) gross = 0;
+function calculateSalary(grossSalary) {
+    const gross = Number(grossSalary);
 
-    // Calculate pension (employee)
+    if (!Number.isFinite(gross) || gross < 0) {
+        return null;
+    }
+
     const pensionEmployee = gross * PENSION_EMPLOYEE_RATE;
-    
-    // Calculate income tax (based on gross - pension? In Ethiopia, pension is deducted before tax)
     const taxableIncome = gross - pensionEmployee;
     const incomeTax = calculateIncomeTax(taxableIncome);
-    
-    // Net salary
-    const netSalary = gross - pensionEmployee - incomeTax;
-    
-    // Employer pension (if checkbox is checked)
     const pensionEmployer = gross * PENSION_EMPLOYER_RATE;
-    
-    // Total deductions
     const totalDeductions = pensionEmployee + incomeTax;
-    
-    // Update DOM
-    netSalarySpan.textContent = formatCurrency(netSalary);
-    incomeTaxSpan.textContent = formatCurrency(incomeTax);
-    pensionEmployeeSpan.textContent = formatCurrency(pensionEmployee);
-    totalDeductionsSpan.textContent = formatCurrency(totalDeductions);
-    
-    if (includeEmployerCheckbox.checked) {
-        pensionEmployerSpan.textContent = formatCurrency(pensionEmployer);
-        employerPensionItem.style.display = 'block';
-    } else {
-        employerPensionItem.style.display = 'none';
-    }
+    const netSalary = gross - totalDeductions;
+
+    return {
+        grossSalary: gross,
+        pensionEmployee,
+        taxableIncome,
+        incomeTax,
+        pensionEmployer,
+        totalDeductions,
+        netSalary
+    };
 }
 
 // Reset to default
