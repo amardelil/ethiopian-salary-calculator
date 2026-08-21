@@ -126,8 +126,25 @@ resetBtn.addEventListener('click', resetCalculator);
 updateUI();
 // Development tests for salary calculations
 function runSalaryTests() {
-    const testSalaries = [0, 2000, 4000, 7000, 10000, 14000, 20000];
-
+    const testSalaries = [
+    0,
+    1999,
+    2000,
+    2001,
+    3999,
+    4000,
+    4001,
+    6999,
+    7000,
+    7001,
+    9999,
+    10000,
+    10001,
+    13999,
+    14000,
+    14001,
+    20000
+];
     testSalaries.forEach((salary) => {
         const result = calculateSalary(salary);
 
