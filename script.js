@@ -64,14 +64,22 @@ function calculateSalary(grossSalary) {
     const netSalary = gross - totalDeductions;
 
     return {
-        grossSalary: gross,
-        pensionEmployee,
-        taxableIncome,
-        incomeTax,
-        pensionEmployer,
-        totalDeductions,
-        netSalary
-    };
+    grossSalary: gross,
+    pensionEmployee,
+    taxableIncome,
+    incomeTax,
+    pensionEmployer,
+    totalDeductions,
+    netSalary,
+
+    // Annual salary summary
+    annualGrossSalary: gross * 12,
+    annualPensionEmployee: pensionEmployee * 12,
+    annualIncomeTax: incomeTax * 12,
+    annualTotalDeductions: totalDeductions * 12,
+    annualNetSalary: netSalary * 12,
+    annualPensionEmployer: pensionEmployer * 12
+};
 }
 function updateUI() {
     let gross = parseFloat(grossInput.value);
