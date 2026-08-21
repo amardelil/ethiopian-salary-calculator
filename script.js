@@ -95,9 +95,8 @@ function resetCalculator() {
     grossInput.value = '10000';
     includeEmployerCheckbox.checked = false;
     employerPensionItem.style.display = 'none';
-    calculateSalary();
+    updateUI();
 }
-
 // Download as PDF using html2pdf
 function downloadPDF() {
     const element = document.querySelector('.calculator-card');
