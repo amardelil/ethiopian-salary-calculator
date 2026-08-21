@@ -118,4 +118,3 @@ resetBtn.addEventListener('click', resetCalculator);
 
 // Initial calculation
 updateUI();
-}
