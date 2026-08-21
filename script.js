@@ -1,13 +1,14 @@
-// Ethiopian Tax Brackets (as of 2024)
-// Based on monthly income
+// EthioTBrBrTkeBpianianploymentcomexckets
+// Proclamation No. 1395/2025
+// Based on monthly employment income
+
 const TAX_BRACKETS = [
-    { min: 0, max: 600, rate: 0, deduction: 0 },
-    { min: 601, max: 1650, rate: 0.10, deduction: 60 },
-    { min: 1651, max: 3200, rate: 0.15, deduction: 142.5 },
-    { min: 3201, max: 5250, rate: 0.20, deduction: 302.5 },
-    { min: 5251, max: 7800, rate: 0.25, deduction: 565 },
-    { min: 7801, max: 10900, rate: 0.30, deduction: 955 },
-    { min: 10901, max: Infinity, rate: 0.35, deduction: 1500 }
+    { min: 0, max: 2000, rate: 0, deduction: 0 },
+    { min: 2001, max: 4000, rate: 0.15, deduction: 300 },
+    { min: 4001, max: 7000, rate: 0.20, deduction: 500 },
+    { min: 7001, max: 10000, rate: 0.25, deduction: 850 },
+    { min: 10001, max: 14000, rate: 0.30, deduction: 1350 },
+    { min: 14001, max: Infinity, rate: 0.35, deduction: 2050 }
 ];
 
 // Pension rates
