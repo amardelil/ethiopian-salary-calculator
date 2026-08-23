@@ -102,7 +102,11 @@ function updateUI() {
     incomeTaxSpan.textContent = formatCurrency(result.incomeTax);
     pensionEmployeeSpan.textContent = formatCurrency(result.pensionEmployee);
     totalDeductionsSpan.textContent = formatCurrency(result.totalDeductions);
-
+annualGrossSalarySpan.textContent = formatCurrency(result.annualGrossSalary);
+annualIncomeTaxSpan.textContent = formatCurrency(result.annualIncomeTax);
+annualPensionEmployeeSpan.textContent = formatCurrency(result.annualPensionEmployee);
+annualTotalDeductionsSpan.textContent = formatCurrency(result.annualTotalDeductions);
+annualNetSalarySpan.textContent = formatCurrency(result.annualNetSalary);
     if (includeEmployerCheckbox.checked) {
         pensionEmployerSpan.textContent = formatCurrency(result.pensionEmployer);
         employerPensionItem.style.display = 'block';
