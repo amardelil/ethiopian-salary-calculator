@@ -108,11 +108,15 @@ annualPensionEmployeeSpan.textContent = formatCurrency(result.annualPensionEmplo
 annualTotalDeductionsSpan.textContent = formatCurrency(result.annualTotalDeductions);
 annualNetSalarySpan.textContent = formatCurrency(result.annualNetSalary);
     if (includeEmployerCheckbox.checked) {
-        pensionEmployerSpan.textContent = formatCurrency(result.pensionEmployer);
-        employerPensionItem.style.display = 'block';
-    } else {
-        employerPensionItem.style.display = 'none';
-    }
+    pensionEmployerSpan.textContent = formatCurrency(result.pensionEmployer);
+    employerPensionItem.style.display = 'block';
+
+    annualPensionEmployerSpan.textContent = formatCurrency(result.annualPensionEmployer);
+    annualEmployerPensionItem.style.display = 'block';
+} else {
+    employerPensionItem.style.display = 'none';
+    annualEmployerPensionItem.style.display = 'none';
+}
 }
 // Reset to default
 function resetCalculator() {
