@@ -1,4 +1,3 @@
-// EthioTBrBrTkeBpianianploymentcomexckets
 // Proclamation No. 1395/2025
 // Based on monthly employment income
 
@@ -18,6 +17,13 @@ const PENSION_EMPLOYER_RATE = 0.11;  // 11%
 // DOM Elements
 const grossInput = document.getElementById('grossSalary');
 const netSalarySpan = document.getElementById('netSalary');
+const annualGrossSalarySpan = document.getElementById('annualGrossSalary');
+const annualIncomeTaxSpan = document.getElementById('annualIncomeTax');
+const annualPensionEmployeeSpan = document.getElementById('annualPensionEmployee');
+const annualTotalDeductionsSpan = document.getElementById('annualTotalDeductions');
+const annualNetSalarySpan = document.getElementById('annualNetSalary');
+const annualPensionEmployerSpan = document.getElementById('annualPensionEmployer');
+const annualEmployerPensionItem = document.getElementById('annualEmployerPensionItem');
 const incomeTaxSpan = document.getElementById('incomeTax');
 const pensionEmployeeSpan = document.getElementById('pensionEmployee');
 const pensionEmployerSpan = document.getElementById('pensionEmployer');
