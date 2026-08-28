@@ -48,9 +48,3 @@ ethiopian-salary-calculator/
 2. Open `taxindex.html` in any modern browser – no server needed.
 
 ---
-
-## 📬 Connect with Me
-
-- **GitHub** – [amardelil](https://github.com/amardelil)
-
----
