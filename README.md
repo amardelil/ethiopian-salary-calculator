@@ -4,13 +4,6 @@
 > Built with HTML, CSS, and JavaScript. Works offline and is fully responsive.
 
 🔗 **[Live Demo](https://ethiopian-salary-calculator-sb4r.vercel.app/)**
----
-
-## 📸 Screenshots
-
-| Calculator Interface | Results View |
-|:--------------------:|:------------:|
-| ![Calculator](images/calculater.png) | ![Results](images/result.png)
 
 ---
 
