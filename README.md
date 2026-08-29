@@ -14,16 +14,6 @@
 
 ---
 
-## 🛠️ Technologies Used
-
-- **HTML5** – structure
-- **CSS3** – custom styling, gradients, responsive
-- **JavaScript** – calculation logic, DOM manipulation
-- **html2pdf.js** – PDF generation
-- **Font Awesome** – icons
-
----
-
 ## 📁 Project Structure
 
 ```
