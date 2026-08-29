@@ -11,9 +11,9 @@
 
 ```
 ethiopian-salary-calculator/
-├── taxindex.html          # Main page
-├── taxstyle.css           # All styles
-├── taxscript.js           # Calculation logic
+├── index.html          # Main page
+├── style.css           # All styles
+├── script.js           # Calculation logic
 ├── images/                # Screenshots
 │   ├── calculator.png
 │   └── results.png
